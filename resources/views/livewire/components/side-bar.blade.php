@@ -43,7 +43,7 @@
                 </li>
 
                 <li class="nav-header">Applications</li>
-                <li class="nav-item"> <a href="" class="nav-link {{ Request::is('customer') ? 'active' : '' }}">
+                <li class="nav-item"> <a href="{{ route('customers.customerlists')}}" class="nav-link {{ Request::is('customer') ? 'active' : '' }}">
                         <i class="nav-icon bi bi-speedometer"></i>
                         <p>
                             Customers
@@ -58,12 +58,12 @@
                         </p>
                     </a>
                     <ul class="nav nav-treeview">
-                        <li class="nav-item {{ Request::is('services/lists') ? 'active' : '' }} "> <a href=""
+                        <li class="nav-item {{ Request::is('services/lists') ? 'active' : '' }} "> <a href="{{ route('services.servicelists')}}"
                                 class="nav-link {{ Request::is('services/lists') ? 'active' : '' }}">
                                 <i class="nav-icon bi bi-circle"></i>
                                 <p>Service List</p>
                             </a> </li>
-                        <li class="nav-item {{ Request::is('services/type') ? 'active' : '' }}"> <a href=""
+                        <li class="nav-item {{ Request::is('services/type') ? 'active' : '' }}"> <a href="{{ route('services.servicetypes')}}"
                                 class="nav-link {{ Request::is('services/type') ? 'active' : '' }}"> <i
                                     class="nav-icon bi bi-circle"></i>
                                 <p>Service Type</p>

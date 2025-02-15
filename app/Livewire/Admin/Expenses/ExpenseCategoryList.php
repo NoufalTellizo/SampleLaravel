@@ -28,6 +28,12 @@ class ExpenseCategoryList extends Component
         $category ->name = $this->name;
         $category ->type = $this->type;
         $category->save();
+        $this->dispatch('notify',[
+            'type'=>'success',
+            'title'=>'Success',
+            'message'=>'Expense Category has been saved successfully'
+        ]);
+        $this->dispatch('closemodal');
     }
     public function editExpenseCategory($id)
     {
@@ -49,8 +55,18 @@ class ExpenseCategoryList extends Component
         $this->dispatch('notify',[
             'type'=>'success',
             'title'=>'Success',
-            'message'=>'Category has been updated successfully'
+            'message'=>'Expense Category has been updated successfully'
         ]);
         $this->dispatch('closemodal');
+    }
+    public function deleteExpenseCategory($id)
+    {
+        $delete = ExpenseCategory::where('id', $id)->first();
+        $delete->delete();
+        $this->dispatch('notify',[
+            'type'=>'success',
+            'title'=>'Success',
+            'message'=>'Expense Category has been deleted successfully'
+        ]);
     }
 }
