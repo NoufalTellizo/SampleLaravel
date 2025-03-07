@@ -16,7 +16,7 @@
                                 Add New Expense
                             </button>
                         </div>
-                    </div> <!-- /.card-header -->
+                    </div> 
                     <div class="card-body">
                         <table class="table table-bordered text-center">
                             <thead>
@@ -66,7 +66,7 @@
                                 @endforeach
                             </tbody>
                         </table>
-                    </div> <!-- /.card-body -->
+                    </div> 
                 </div>
             </div>
         </div>
@@ -159,8 +159,8 @@
                     </div>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary" wire:click.prevent="save">Add</button>
+                    <button type="button" class="px-4 p-2 rounded text-white bg-gray-600 hover:bg-gray-400 focus:outline-2 focus:outline-gray-600 active:bg-gray-700" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="px-4 p-2 rounded text-white bg-violet-600 hover:bg-violet-400 focus:outline-2 focus:outline-violet-600 active:bg-violet-700" wire:click.prevent="save">Add</button>
                 </div>
             </div>
         </div>

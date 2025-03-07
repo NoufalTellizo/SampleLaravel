@@ -44,9 +44,9 @@
                                         <td>
                                             <div class="d-flex align-items-center">
                                                 <button class="btn btn-block btn-outline-warning btn-sm" data-bs-toggle="modal"
-                                                    data-bs-target="#editModal" wire:click="editServiceList({{ $item->id }})">Edit</button>
+                                                    data-bs-target="#editModal" wire:click="editServiceList('{{ (string) $item->batch_id }}')">Edit</button>
                                                 <button class="btn btn-block btn-outline-danger mx-2 btn-sm"
-                                                    wire:click.prevent="deleteServiceType({{ $item->id }})">Delete</button>
+                                                    wire:click="deleteServiceType('{{ $item->batch_id }}')">Delete</button>
                                             </div>
                                         </td>
                                     </tr>
@@ -142,7 +142,7 @@
         <div class="modal-dialog modal-lg modal-dialog-centered">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h1 class="modal-title fs-5" id="exampleModalLabel">Add Service List</h1>
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">  List</h1>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
@@ -186,13 +186,20 @@
                         </div>
                         <div class="mt-4 col-md-2 flex items-center justify-center">
                             <button type="button" class="btn btn-primary w-full"
-                                wire:click.prevent="addServiceList">Add</button>
+                                wire:click.prevent="addServiceListUpdate">Add</button>
                         </div>
                     </div>
                     <div class="row">
                         @foreach ($servicelist as $key => $item)
                             <div class="mb-3 col-md-6">
-                                <div class="card flex flex-col items-center justify-center">
+                                <div class="flex items-end justify-end relative z-10">
+                                    <button class="bg-red-400 text-white rounded-md" wire:click="removeService({{ $key }})"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            viewBox="0 0 24 24">
+                                            <path fill="currentColor"
+                                                d="M19 6.41L17.59 5L12 10.59L6.41 5L5 6.41L10.59 12L5 17.59L6.41 19L12 13.41L17.59 19L19 17.59L13.41 12z" />
+                                        </svg></button>
+                                </div>
+                                <div class="card flex flex-col items-center justify-center absolute right-1 -top-3 z-0">
                                     <label>{{ $servicetypeNames[$item['servicetype_id']] }}</label>
                                     <label>{{ $item['price'] }}</label>
                                 </div>
@@ -202,7 +209,7 @@
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary" wire:click.prevent="save">Save</button>
+                    <button type="button" class="btn btn-primary" wire:click.prevent="update">Save</button>
                 </div>
             </div>
         </div>

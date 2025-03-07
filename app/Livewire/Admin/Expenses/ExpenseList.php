@@ -5,6 +5,7 @@ namespace App\Livewire\Admin\Expenses;
 use App\Models\Expense;
 use App\Models\ExpenseCategory;
 use Illuminate\Support\Facades\Auth;
+use Livewire\Attributes\Layout;
 use Livewire\Component;
 
 class ExpenseList extends Component

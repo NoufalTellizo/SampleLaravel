@@ -22,7 +22,7 @@
                 <span class="text-danger tw-text-xs">{{ $message }}</span>
             @enderror
         </div>
-        <div class="col-4 px-3 py-2 mt-2">
+        <div class="w-full col-4 px-3 py-2 mt-2">
             <div class="d-grid gap-2"> <button class="btn btn-primary" wire:click.prevent='login'>Sign In</button>
             </div>
         </div>

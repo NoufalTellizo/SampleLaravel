@@ -19,10 +19,24 @@
                 </li>
 
                 <li class="nav-header">Orders</li>
-                <li class="nav-item"> <a href="" class="nav-link {{ Request::is('pos') ? 'active' : '' }}">
+                {{-- <li class="nav-item"> <a href="{{ route('orders.pos')}}" class="nav-link {{ Request::is('pos') ? 'active' : '' }}">
                         <i class="nav-icon bi bi-speedometer"></i>
                         <p>
                             POS
+                        </p>
+                    </a>
+                </li> --}}
+                <li class="nav-item"> <a href="{{ route('orders.pos')}}" class="nav-link {{ Request::is('pos') ? 'active' : '' }}">
+                        <i class="nav-icon bi bi-speedometer"></i>
+                        <p>
+                            POS
+                        </p>
+                    </a>
+                </li>
+                <li class="nav-item"> <a href="{{ route('orders.productlist')}}" class="nav-link {{ Request::is('pos') ? 'active' : '' }}">
+                        <i class="nav-icon bi bi-speedometer"></i>
+                        <p>
+                            Product List
                         </p>
                     </a>
                 </li>
@@ -77,6 +91,102 @@
                     </ul>
 
                 </li>
+                <li class="nav-item  {{ Request::is('inventory*') ? 'menu-open' : '' }} "> <a href="#"
+                        class="nav-link"> <i class="nav-icon bi bi-box-seam-fill"></i>
+                        <p>
+                            Inventory
+                            <i class="nav-arrow bi bi-chevron-right"></i>
+                        </p>
+                    </a>
+                    <ul class="nav nav-treeview">
+                        <li class="nav-item {{ Request::is('items/lists') ? 'active' : '' }} "> <a href="{{ route('inventory.itemlist')}}"
+                                class="nav-link {{ Request::is('items/lists') ? 'active' : '' }}">
+                                <i class="nav-icon bi bi-circle"></i>
+                                <p>Items List</p>
+                            </a> </li>
+                        <li class="nav-item {{ Request::is('inventory.addonslist') ? 'active' : '' }}"> <a href="{{ route('inventory.addonslist')}}"
+                                class="nav-link {{ Request::is('services/type') ? 'active' : '' }}"> <i
+                                    class="nav-icon bi bi-circle"></i>
+                                <p>AddON</p>
+                            </a> </li>
+                        <li class="nav-item {{ Request::is('inventory.itemlist') ? 'active' : '' }}"> <a href="{{ route('inventory.itemslist')}}"
+                                class="nav-link {{ Request::is('services/type') ? 'active' : '' }}"> <i
+                                    class="nav-icon bi bi-circle"></i>
+                                <p>Items</p>
+                            </a> </li>
+                        <li class="nav-item {{ Request::is('inventory.productlist') ? 'active' : '' }}"> <a href="{{ route('inventory.productlist')}}"
+                                class="nav-link {{ Request::is('services/type') ? 'active' : '' }}"> <i
+                                    class="nav-icon bi bi-circle"></i>
+                                <p>Products</p>
+                            </a> </li>
+                        <li class="nav-item {{ Request::is('inventory.categorylist') ? 'active' : '' }}"> <a href="{{ route('inventory.categorylist')}}"
+                                class="nav-link {{ Request::is('services/type') ? 'active' : '' }}"> <i
+                                    class="nav-icon bi bi-circle"></i>
+                                <p>Cateogires</p>
+                            </a> </li>
+                        {{-- <li class="nav-item {{ Request::is('services/addons') ? 'active' : '' }}"> <a href=""
+                                class="nav-link {{ Request::is('services/addons') ? 'active' : '' }}"> <i
+                                    class="nav-icon bi bi-circle"></i>
+                                <p>Addons</p>
+                            </a> </li> --}}
+
+                    </ul>
+
+                </li>
+                {{-- <li class="nav-item  {{ Request::is('inventory-two*') ? 'menu-open' : '' }} "> <a href="#"
+                        class="nav-link"> <i class="nav-icon bi bi-box-seam-fill"></i>
+                        <p>
+                            Inventory 2
+                            <i class="nav-arrow bi bi-chevron-right"></i>
+                        </p>
+                    </a>
+                    <ul class="nav nav-treeview">
+                        <li class="nav-item {{ Request::is('items/lists') ? 'active' : '' }} "> <a href="{{ route('inventory_two.itemlist')}}"
+                                class="nav-link {{ Request::is('items/lists') ? 'active' : '' }}">
+                                <i class="nav-icon bi bi-circle"></i>
+                                <p>Items List 2</p>
+                            </a> </li>
+                        <li class="nav-item {{ Request::is('services/type') ? 'active' : '' }}"> <a href="{{ route('services.servicetypes')}}"
+                                class="nav-link {{ Request::is('services/type') ? 'active' : '' }}"> <i
+                                    class="nav-icon bi bi-circle"></i>
+                                <p>Item Type</p>
+                            </a> </li>
+                        <li class="nav-item {{ Request::is('services/addons') ? 'active' : '' }}"> <a href=""
+                                class="nav-link {{ Request::is('services/addons') ? 'active' : '' }}"> <i
+                                    class="nav-icon bi bi-circle"></i>
+                                <p>Addons</p>
+                            </a> </li>
+
+                    </ul>
+
+                </li> --}}
+                {{-- <li class="nav-item  {{ Request::is('inventory-three*') ? 'menu-open' : '' }} "> <a href="#"
+                        class="nav-link"> <i class="nav-icon bi bi-box-seam-fill"></i>
+                        <p>
+                            Inventory 3
+                            <i class="nav-arrow bi bi-chevron-right"></i>
+                        </p>
+                    </a>
+                    <ul class="nav nav-treeview">
+                        <li class="nav-item {{ Request::is('items/lists') ? 'active' : '' }} "> <a href="{{ route('inventory_three.itemlist')}}"
+                                class="nav-link {{ Request::is('items/lists') ? 'active' : '' }}">
+                                <i class="nav-icon bi bi-circle"></i>
+                                <p>Items List 3</p>
+                            </a> </li>
+                        <li class="nav-item {{ Request::is('services/type') ? 'active' : '' }}"> <a href="{{ route('services.servicetypes')}}"
+                                class="nav-link {{ Request::is('services/type') ? 'active' : '' }}"> <i
+                                    class="nav-icon bi bi-circle"></i>
+                                <p>Item Type</p>
+                            </a> </li>
+                        <li class="nav-item {{ Request::is('services/addons') ? 'active' : '' }}"> <a href=""
+                                class="nav-link {{ Request::is('services/addons') ? 'active' : '' }}"> <i
+                                    class="nav-icon bi bi-circle"></i>
+                                <p>Addons</p>
+                            </a> </li>
+
+                    </ul>
+
+                </li> --}}
                 <li class="nav-item  {{ Request::is('expenses*') ? 'menu-open' : '' }}"> <a href=#
                         class="nav-link"> <i class="nav-icon bi bi-box-seam-fill"></i>
                         <p>
@@ -172,7 +282,7 @@
 
 
                 <li class="nav-header">Accounts</li>
-                <li class="nav-item {{ Request::is('tools*') ? 'menu-open' : '' }}"> <a href="#"
+                {{-- <li class="nav-item {{ Request::is('tools*') ? 'menu-open' : '' }}"> <a href="#"
                         class="nav-link"> <i class="nav-icon bi bi-box-seam-fill"></i>
                         <p>
                             Tools
@@ -212,7 +322,21 @@
                             </a> </li>
 
                     </ul>
-                </li>
+                </li> --}}
+                <li class="nav-item"> <a href="{{ route('cards')}}" class="nav-link {{ Request::is('cards') ? 'active' : '' }}">
+                    <i class="nav-icon bi bi-speedometer"></i>
+                    <p>
+                        Cards
+                    </p>
+                </a>
+            </li>
+                <li class="nav-item"> <a href="{{ route('ui.components')}}" class="nav-link {{ Request::is('ui_components') ? 'active' : '' }}">
+                    <i class="nav-icon bi bi-speedometer"></i>
+                    <p>
+                        UI Components
+                    </p>
+                </a>
+            </li>
                 <li class="nav-item tw-cursor-pointer " wire:click="logout"> <a class="nav-link"> <i
                             class="nav-icon bi bi-speedometer"></i>
 
