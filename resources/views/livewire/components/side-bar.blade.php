@@ -337,6 +337,14 @@
                     </p>
                 </a>
             </li>
+            </li>
+                <li class="nav-item"> <a href="{{ route('new_sidebar')}}" class="nav-link {{ Request::is('new_sidebar') ? 'active' : '' }}">
+                    <i class="nav-icon bi bi-speedometer"></i>
+                    <p>
+                        New Sidebar
+                    </p>
+                </a>
+            </li>
                 <li class="nav-item tw-cursor-pointer " wire:click="logout"> <a class="nav-link"> <i
                             class="nav-icon bi bi-speedometer"></i>
 

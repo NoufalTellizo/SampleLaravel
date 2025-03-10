@@ -390,7 +390,7 @@
 
 
         <div class="flex flex-col">
-            <div class="flex items-center justify-center w-[15rem] h-[10rem] bg-white rounded-2xl px-4 pt-12 relative">
+            <div class="flex items-center justify-center w-[15rem] h-full bg-white rounded-2xl px-4 pt-12 relative">
 
                <div class="z-40 bg-black rounded-full size-10 absolute left-8"></div>
                <div class="z-30 bg-red-500 rounded-full size-10 absolute left-[59px]"></div>

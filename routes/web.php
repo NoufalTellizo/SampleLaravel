@@ -41,4 +41,7 @@ Route::group(['middleware'=>[AdminMiddleware::class]], function (){
         Route::get('/cards', \App\Livewire\Card\Cards::class)->name('cards');
         Route::get('/ui_components', \App\Livewire\Card\UiComponents::class)->name('ui.components');
     });
+    Route::group(['prefix' => 'new_sidebar/'], function(){
+        Route::get('/new_sidebar', \App\Livewire\Admin\AdminPanel::class)->name('new_sidebar');
+    });
 });
