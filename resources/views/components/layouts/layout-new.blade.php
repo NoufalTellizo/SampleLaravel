@@ -10,7 +10,7 @@
 </head>
 
 <body>
-    <div class="h-screen w-screen flex overflow-clip bg-neutral-50">
+    <div class="h-screen w-screen flex overflow-y-auto bg-neutral-50">
         <livewire:components.sidebar-two />
         <div class="flex flex-col w-full bg-neutral-50">
             <livewire:components.header-two />

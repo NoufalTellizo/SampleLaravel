@@ -167,5 +167,102 @@
         </div>
 
 
+        <div class="w-[40rem] p-1 flex flex-col bg-black rounded-2xl">
+            <div class="flex w-full rounded-xl">
+                <img src="{{ asset('assets/img/coverphoto.png') }}" alt=""
+                    class="object-cover rounded-xl w-full">
+            </div>
+            <div class="p-1 relative">
+                <img src="{{ asset('assets/img/user4-128x128.jpg') }}" alt=""
+                    class="rounded-full ring-2 ring-black ml-8 -translate-y-[70px] ">
+                    <div class="absolute top-1 left-0 translate-y-[80px] text-white font-semibold text-xl">
+                        <div class="flex flex-col px-9 py-0">
+                            <div class="mb-3 py-2">
+                                <div class="text-white font-semibold text-xl tracking-wide text-balance">Ellisa Perry</div>
+                                <div class="text-white font-normal text-sm tracking-wide text-balance">ellisaperry@gmail.com</div>
+                            </div>
+                        </div>
+                    </div>
+                <button>
+                    <svg xmlns="http://www.w3.org/2000/svg"
+                        class=" rounded-full border p-0.5 text-white size-5 absolute top-9 left-[132px]"
+                        viewBox="0 0 24 24">
+                        <path fill="currentColor"
+                            d="M20 4h-3.17L15 2H9L7.17 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2m0 14H4V6h4.05l1.83-2h4.24l1.83 2H20zM12 7a5 5 0 0 0-5 5a5 5 0 0 0 5 5a5 5 0 0 0 5-5a5 5 0 0 0-5-5m0 8a3 3 0 0 1-3-3a3 3 0 0 1 3-3a3 3 0 0 1 3 3a3 3 0 0 1-3 3" />
+                    </svg>
+                </button>
+            </div>
+            {{-- <div class="flex flex-col px-9 py-0">
+                <div class="mb-3 py-2">
+                    <div class="text-white font-semibold text-xl tracking-wide text-balance">Ellisa Perry</div>
+                    <div class="text-white font-normal text-sm tracking-wide text-balance">ellisaperry@gmail.com</div>
+                </div>
+            </div> --}}
+            <div class="flex flex-col px-9 py-0 w-full">
+                <div class="border-b border-neutral-500 py-2 flex items-center justify-between w-full">
+                    <div class="text-white font-normal text-xl tracking-wide text-balance">Name</div>
+                    <div class="flex gap-2">
+                        <input type="text"
+                            class="rounded-md px-6 py-2 bg-zinc-900 focus:outline-zinc-600 text-white placeholder:text-white w-[20rem]"
+                            placeholder="Ellisa Perry">
+                    </div>
+                </div>
+                <div class="border-b border-neutral-500 py-2 flex items-center justify-between w-full">
+                    <div class="text-white font-normal text-xl tracking-wide text-balance">Title</div>
+                    <div class="flex gap-2">
+                        <input type="text"
+                            class="rounded-md px-6 py-2 bg-zinc-900 focus:outline-zinc-600 text-white placeholder:text-white w-[20rem]"
+                            placeholder="TEAM LEAD" disabled>
+                    </div>
+                </div>
+                <div class="py-2 flex items-center justify-between w-full">
+                    <div class="text-white font-normal text-xl tracking-wide text-balance mb-[50px]">Bio</div>
+                    <div class="flex gap-2">
+                        <textarea type="text"
+                            class="rounded-md px-6 py-2 bg-zinc-900 focus:outline-zinc-600 text-white placeholder:text-white resize-none overflow-hidden w-[20rem]" placeholder="Committed to driving success and fostering growth within the team..."></textarea>
+                    </div>
+                </div>
+                <div class="flex items-end justify-end gap-2 mt-2">
+                    <button class="size-12 bg-zinc-900 rounded-full flex items-center justify-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="size-9 text-white" viewBox="0 0 24 24">
+                            <g fill="currentColor">
+                                <path fill-rule="evenodd"
+                                    d="M12.51 8.796v1.697a3.74 3.74 0 0 1 3.288-1.684c3.455 0 4.202 2.16 4.202 4.97V19.5h-3.2v-5.072c0-1.21-.244-2.766-2.128-2.766c-1.827 0-2.139 1.317-2.139 2.676V19.5h-3.19V8.796h3.168ZM7.2 6.106a1.61 1.61 0 0 1-.988 1.483a1.595 1.595 0 0 1-1.743-.348A1.607 1.607 0 0 1 5.6 4.5a1.6 1.6 0 0 1 1.6 1.606"
+                                    clip-rule="evenodd" />
+                                <path d="M7.2 8.809H4V19.5h3.2z" />
+                            </g>
+                        </svg>
+                    </button>
+                    <button class="size-12 bg-zinc-900 rounded-full flex items-center justify-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="size-9 text-white" viewBox="0 0 24 24">
+                            <path fill="none" stroke="currentColor" stroke-dasharray="64" stroke-dashoffset="64"
+                                stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M19.89 7.34c-0.09 0.33 -0.49 1.16 -1.17 1.95c-0.45 8.68 -8.87 11.5 -14.64 8.59c-0.79 -1.05 2.85 -0.62 4.18 -2.63c-5.03 -2.57 -4.63 -9.44 -3.62 -9.16c2.37 3.19 6.19 3.48 6.81 3.19c0 -0.73 -0.31 -2.32 1.41 -3.65c0.99 -0.71 3.06 -1.34 4.93 0.69c0.32 0.21 0.78 0.3 1.47 0.15c0.41 -0.21 0.95 -0.07 0.67 0.66Z">
+                                <animate fill="freeze" attributeName="stroke-dashoffset" dur="0.6s"
+                                    values="64;0" />
+                            </path>
+                        </svg>
+                    </button>
+                    <button class="size-12 bg-zinc-900 rounded-full flex items-center justify-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="size-9 text-white" viewBox="0 0 24 24">
+                            <g fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M12 16a4 4 0 1 0 0-8a4 4 0 0 0 0 8" />
+                                <path d="M3 16V8a5 5 0 0 1 5-5h8a5 5 0 0 1 5 5v8a5 5 0 0 1-5 5H8a5 5 0 0 1-5-5Z" />
+                                <path stroke-linecap="round" stroke-linejoin="round" d="m17.5 6.51l.01-.011" />
+                            </g>
+                        </svg>
+                    </button>
+                </div>
+                <div class="flex items-center">
+                    <button class="flex gap-2 px-4 py-2 rounded-lg bg-zinc-900 text-white animate-bounce">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="size-6 text-white" viewBox="0 0 24 24">
+                            <path fill="currentColor"
+                                d="M20.01 15.38c-1.23 0-2.42-.2-3.53-.56a.98.98 0 0 0-1.01.24l-1.57 1.97c-2.83-1.35-5.48-3.9-6.89-6.83l1.95-1.66c.27-.28.35-.67.24-1.02c-.37-1.11-.56-2.3-.56-3.53c0-.54-.45-.99-.99-.99H4.19C3.65 3 3 3.24 3 3.99C3 13.28 10.73 21 20.01 21c.71 0 .99-.63.99-1.18v-3.45c0-.54-.45-.99-.99-.99" />
+                        </svg>Contact Now
+                    </button>
+                </div>
+            </div>
+        </div>
     </div>
 </div>
