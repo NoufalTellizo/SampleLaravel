@@ -167,10 +167,10 @@
         </div>
 
 
-        {{-- <div class="w-[24rem] flex flex-col bg-white rounded-2xl">
+        <div class="w-[24rem] flex flex-col bg-white rounded-2xl">
             <div class="flex w-full rounded-xl h-[10rem] relative">
                 <img src="https://cdn.sanity.io/images/c1chvb1i/production/58dab615cbe0e2c4657733e7a8bcaf131c4469e0-1980x1320.png?auto=format&fit=max&q=75&w=1440"
-                    alt="" class="object-cover bg-white rounded-t-xl ">
+                    alt="" class="object-cover bg-white rounded-t-xl">
                 <button>
                     <svg xmlns="http://www.w3.org/2000/svg"
                         class="size-8 p-1 absolute right-3 top-3 text-black bg-white rounded-full"
@@ -181,8 +181,9 @@
                 </button>
             </div>
 
-            
-            <div class="flex items-center justify-between mt-2 -translate-y-4 p-2 bg-black text-white rounded-xl mb-20">
+
+            <div
+                class="flex items-center justify-between mt-2 -translate-y-4 p-2 bg-black text-white rounded-xl mb-20">
                 <div class="flex flex-col">
                     <div class="font-semibold text-xl tracking-wide text-balance">High Top</div>
                     <div class="text-xs tracking-wide text-balance">Puma High Top <span class="text-xs">(Limited
@@ -195,14 +196,14 @@
                     <button class="text-xs mb-1">+</button>
                 </div>
             </div>
-        </div> --}}
+        </div>
 
 
         <div class="w-[40rem] p-1 flex flex-col bg-black rounded-2xl">
             <div class="flex w-full rounded-xl">
                 <img src="{{ asset('assets/img/coverphoto.png') }}" alt=""
                     class="object-cover rounded-xl w-full">
-                
+
             </div>
             <div class="p-1 relative">
                 <img src="{{ asset('assets/img/user4-128x128.jpg') }}" alt=""
@@ -210,7 +211,8 @@
                 <div class="absolute top-1 left-0 translate-y-[80px] text-white font-semibold text-xl">
                     <div class="flex flex-col px-9 py-0">
                         <div class="mb-3 py-2">
-                            <div class="text-white font-semibold text-xl tracking-wide text-balance antialiased">Ellisa Perry</div>
+                            <div class="text-white font-semibold text-xl tracking-wide text-balance antialiased">Ellisa
+                                Perry</div>
                             <div class="text-white font-normal text-sm tracking-wide text-balance">
                                 ellisaperry@gmail.com</div>
                         </div>
@@ -225,7 +227,7 @@
                     </svg>
                 </button>
             </div>
-           
+
             <div class="flex flex-col px-9 py-0 w-full">
                 <div class="border-b border-neutral-500 py-2 flex items-center justify-between w-full">
                     <div class="text-white font-normal text-xl tracking-wide text-balance">Name</div>
@@ -294,43 +296,6 @@
             </div>
         </div>
 
-
-        {{-- <div class="w-[24rem] flex flex-col mt-20">
-            <div class="bg-black rounded-t-2xl flex p-3 items-start justify-start relative w-full">
-                <img src="https://redtape.com/cdn/shop/files/RSL0734_1_57b97fca-a9a8-40e4-b52c-300e9cba2166.png?v=1740075967"
-                    alt="" class="size-36 rounded-full -translate-y-20">
-
-                <button>
-                    <svg xmlns="http://www.w3.org/2000/svg"
-                        class="size-8 p-1 absolute right-3 top-3 text-black bg-white rounded-full"
-                        viewBox="0 0 24 24">
-                        <path fill="currentColor"
-                            d="M17 18a2 2 0 0 1 2 2a2 2 0 0 1-2 2a2 2 0 0 1-2-2c0-1.11.89-2 2-2M1 2h3.27l.94 2H20a1 1 0 0 1 1 1c0 .17-.05.34-.12.5l-3.58 6.47c-.34.61-1 1.03-1.75 1.03H8.1l-.9 1.63l-.03.12a.25.25 0 0 0 .25.25H19v2H7a2 2 0 0 1-2-2c0-.35.09-.68.24-.96l1.36-2.45L3 4H1zm6 16a2 2 0 0 1 2 2a2 2 0 0 1-2 2a2 2 0 0 1-2-2c0-1.11.89-2 2-2m9-7l2.78-5H6.14l2.36 5z" />
-                    </svg>
-                </button>
-            </div>
-            <div
-                class="flex items-center justify-between p-3 bg-black text-white rounded-b-2xl absolute translate-y-[90px] w-[24rem]">
-                <div class="flex flex-col">
-                    <div class="font-semibold text-xl tracking-wide text-balance">Jordan</div>
-                    <div class="text-xs tracking-wide text-balance">Jordan 4 Retro Eminem Carmartt</div>
-                    <div class="font-semibold text-xl tracking-wide text-balance">$12000.00</div>
-                </div>
-                <div class="flex items-center justify-center gap-2 bg-zinc-100 text-black rounded-lg px-3 py-1">
-                    <button class="text-xs">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="size-4" viewBox="0 0 24 24">
-                            <path fill="currentColor" d="M19 12.998H5v-2h14z" />
-                        </svg>
-                    </button>
-                    <div class="font-semibold text-sm">1</div>
-                    <button class="text-xs">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="size-4" viewBox="0 0 24 24">
-                            <path fill="currentColor" d="M19 12.998h-6v6h-2v-6H5v-2h6v-6h2v6h6z" />
-                        </svg>
-                    </button>
-                </div>
-            </div>
-        </div> --}}
 
     </div>
 </div>

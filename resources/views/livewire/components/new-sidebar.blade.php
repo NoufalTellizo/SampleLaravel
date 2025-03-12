@@ -1,7 +1,7 @@
 <div class="flex shrink-0 h-full">
-    <div class="w-[16rem] flex flex-col h-full justify-between border-r-2 p-3">
-        <div class="flex flex-col">
-            <div class="flex items-center justify-between">
+    <div class="w-[16rem] flex flex-col h-full justify-between border-r-2">
+        <div class="flex flex-col p-2">
+            <div class="flex items-center justify-between p-2">
                 <div class="flex gap-2">
                     <div class="size-8 rounded-lg bg-gradient-to-br from-[#ff5c4f] to-[#7c52dc]"></div>
                     <div class="flex flex-col">
@@ -16,7 +16,7 @@
             </div>
 
 
-            <div class="mt-2 flex items-center border-2 rounded-lg bg-white">
+            {{-- <div class="m-2 flex items-center border-2 rounded-lg bg-white ">
                 <div class="">
                     <svg xmlns="http://www.w3.org/2000/svg" class="size-5 ml-2 text-[#a4a4a4]" viewBox="0 0 24 24">
                         <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
@@ -28,9 +28,9 @@
                     <input type="text" class="px-2 py-1 w-full rounded-lg bg-transparent focus:outline-none"
                         placeholder="Search">
                 </div>
-                <div class="flex gap-2">
+                <div class="flex">
                     <div class="">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="bg-neutral-100 size-6 rounded text-[#a4a4a4]"
+                        <svg xmlns="http://www.w3.org/2000/svg" class="size-6 rounded text-black"
                             viewBox="0 0 24 24">
                             <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
                                 d="M5.5 9.5v-3a1 1 0 0 1 1-1h3a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1h-3a1 1 0 0 1-1-1m8 0v-3a1 1 0 0 1 1-1h3a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1h-3a1 1 0 0 1-1-1m0 8v-3a1 1 0 0 1 1-1h3a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1h-3a1 1 0 0 1-1-1m-8 0v-3a1 1 0 0 1 1-1h3a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1h-3a1 1 0 0 1-1-1"
@@ -39,15 +39,15 @@
                     </div>
                     <div class="">
                         <svg xmlns="http://www.w3.org/2000/svg"
-                            class="bg-neutral-100 size-6 rounded mr-2 text-[#a4a4a4]" viewBox="0 0 24 24">
+                            class=" size-6 rounded text-black" viewBox="0 0 24 24">
                             <path fill="currentColor" d="M9 7v10h2v-3.33L13 17h2l-3-5l3-5h-2l-2 3.33V7z" />
                         </svg>
                     </div>
                 </div>
-            </div>
+            </div> --}}
 
 
-            <div class="flex flex-col gap-1">
+            <div class="flex flex-col gap-1 p-2">
                 <button class="mt-2 px-2 flex items-center justify-between w-full rounded-lg hover:bg-[#ebf0f4] group">
                     <div class="flex items-center">
                         <div class="">
@@ -65,7 +65,7 @@
                 <button class=" px-2 flex items-center justify-between w-full rounded-lg hover:bg-[#ebf0f4] group">
                     <div class="flex items-center">
                         <div class="">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="size-6 text-black group-hover:text-[#548383]"
+                            <svg xmlns="http://www.w3.org/2000/svg" class="size-5 text-black group-hover:text-[#548383]"
                                 viewBox="0 0 24 24">
                                 <path fill="currentColor"
                                     d="M6 19h3v-6h6v6h3v-9l-6-4.5L6 10zm-2 2V9l8-6l8 6v12h-7v-6h-2v6zm8-8.75" />
@@ -122,17 +122,17 @@
             </div>
 
 
-            <div class="flex items-center justify-between px-2 py-3">
+            <div class="flex items-center justify-between px-4 py-2">
                 <div class="text-xs font-medium text-[#656565]">Workflow</div>
                 <button class="">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="size-5 text-black" viewBox="0 0 24 24">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="size-6 text-black" viewBox="0 0 24 24">
                         <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
                             d="m17 14l-5-5l-5 5" stroke-width="1" />
                     </svg>
                 </button>
             </div>
 
-            <div class="flex flex-col gap-1">
+            <div class="flex flex-col gap-1 p-2">
                 <button class="px-2 flex items-center justify-between w-full rounded-lg bg-[#ebf0f4] group">
                     <div class="flex items-center">
                         <div class="">
@@ -199,17 +199,17 @@
             </div>
 
 
-            <div class="flex items-center justify-between px-2 py-3">
+            <div class="flex items-center justify-between px-4 py-2">
                 <div class="text-xs font-medium text-[#656565] ">Documents</div>
                 <button class="">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="size-5 text-black" viewBox="0 0 24 24">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="size-6 text-black" viewBox="0 0 24 24">
                         <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
                             d="m17 14l-5-5l-5 5" stroke-width="1" />
                     </svg>
                 </button>
             </div>
 
-            <div class="flex flex-col gap-1">
+            <div class="flex flex-col gap-1 p-2">
                 <button class="px-2 flex items-center justify-between w-full rounded-lg hover:bg-[#ebf0f4] group">
                     <div class="  flex items-center">
                         <svg xmlns="http://www.w3.org/2000/svg" class="size-5 text-black group-hover:text-[#548383]"
@@ -248,17 +248,17 @@
             </div>
 
 
-            <div class="flex items-center justify-between px-2 py-3">
+            <div class="flex items-center justify-between px-4 py-2">
                 <div class="text-xs font-medium text-[#656565]">Contacts</div>
                 <button class="">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="size-5 text-black" viewBox="0 0 24 24">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="size-6 text-black" viewBox="0 0 24 24">
                         <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
                             d="m17 14l-5-5l-5 5" stroke-width="1" />
                     </svg>
                 </button>
             </div>
 
-            <div class="flex flex-col gap-1">
+            <div class="flex flex-col gap-1 p-2">
                 <button class="px-2 flex items-center justify-between w-full rounded-lg hover:bg-[#ebf0f4] group">
                     <div class="  flex items-center">
                         <svg xmlns="http://www.w3.org/2000/svg" class="size-5 text-black group-hover:text-[#548383]"
@@ -332,9 +332,11 @@
         </div>
 
 
-        <div class="flex items-center justify-between border-t py-1">
-            <div class="flex gap-2">
-                <div class="size-8 rounded-full bg-purple-300"></div>
+        <div class="flex items-center justify-between border-t px-2 py-4">
+            <div class="flex gap-2 items-center">
+                <div class="size-10 rounded-full bg-purple-300 flex items-center justify-center">
+                    <img src="https://static-00.iconduck.com/assets.00/avatar-icon-2048x2048-ilrgk6vk.png " alt="" class="size-6">
+                </div>
                 <div class="flex flex-col">
                     <span class="text-sm font-semibold">Esther Howard</span>
                     <span class="text-xs">esther@howard.com</span>
